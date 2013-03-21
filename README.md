@@ -1,7 +1,8 @@
 JsonRestAPI-ServerBootstrap
 ===========================
 
-Minimal php rest api server app responses json objects (uses slim framework)
+Minimal php rest api server app responses json objects (uses slim framework).
+Simply handles the errors/exceptions and empty response objects very high-level and always returns a json object.
 
 
 Install
