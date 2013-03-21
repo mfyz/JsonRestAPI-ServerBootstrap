@@ -20,7 +20,7 @@ You can define a new method in the router.php with any name and GET, POST, PUT, 
 		));
 	});
 
-It responds the response object in JSON format.
+It returns the response object in JSON format.
 
 	{
 		"reply": "Hi!", 
