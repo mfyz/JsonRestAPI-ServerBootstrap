@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jsonrestapi-serverbootstrap by mfyz</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jsonrestapi-serverbootstrap</h1>
+        <p>Minimal php rest api server app responses json objects (uses slim framework)</p>
+        <p class="view"><a href="https://github.com/mfyz/JsonRestAPI-ServerBootstrap">View the Project on GitHub <small>mfyz/JsonRestAPI-ServerBootstrap</small></a></p>
+        <ul>
+          <li><a href="https://github.com/mfyz/JsonRestAPI-ServerBootstrap/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mfyz/JsonRestAPI-ServerBootstrap/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mfyz/JsonRestAPI-ServerBootstrap">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>JsonRestAPI-ServerBootstrap</h1>
+
+<p>Minimal php rest api server app responses json objects (uses slim framework).
+Simply handles the errors/exceptions and empty response objects very high-level and always returns a json object.</p>
+
+<h2>Install</h2>
+
+<p>This is a standalone php app requires no configuration. Just download and run.</p>
+
+<h2>Usage</h2>
+
+<p>You can define a new method in the router.php with any name and GET, POST, PUT, DELETE methods via</p>
+
+<pre><code>$app-&gt;get('/hello', function () use ($app) {
+    $app-&gt;render(array(
+        'reply' =&gt; 'Hi!',
+        'time' =&gt; time()
+    ));
+});
+</code></pre>
+
+<p>It returns the response object in JSON format.</p>
+
+<pre><code>{
+    "reply": "Hi!", 
+    "time": 1363882949
+}
+</code></pre>
+
+<h2>Dependencies</h2>
+
+<p>It uses Slim framework <a href="http://www.slimframework.com">http://www.slimframework.com</a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/mfyz">mfyz</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
